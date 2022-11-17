@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/*Configurações globais*/
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: 'Passion One', cursive;
+    --fonte03: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px; 
+    font-size: 1em; 
+}
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte01);
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/*Configurações do Header*/
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 30px;
+    font-variant: small-caps;
+    font-family: var(--fonte02);
+    font-size: 7vw;
+}
+header > p{
+    padding-bottom: 30px;
+}
+
+/*Configurações do main*/
+section{
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte03);
+    font-size: 3vw;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(96, 94, 94);
+    color: white;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.400);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem > p{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px black;
+}
+section > p{
+    padding-bottom: 1.5em;
+}
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;    
+}
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;    
+}
+
+/*Configurações do footer*/
+footer{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;    
+}
